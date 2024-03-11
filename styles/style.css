@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
-    background-color: red;
+    background-color: rgb(255, 255, 255);
 }
 
 /* Format mobile */
@@ -7,14 +10,165 @@
     h1{
         color: blue;
     }
+    nav{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        margin-left: 0;
+    }
+    a{
+        color: black;
+        font-style: normal;
+        text-decoration: none;
+        text-align: center;
+        font-size: 5vw;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500
+    }
+    #IntroAcc{
+        text-align: center;
+        font-size: 8vw;
+        padding-top: 5vh;
+    }
+    #ParAcc{
+        text-align: center;
+        font-size: 5vw;
+        padding-top: 5vh;
+    }
+    #footer{
+        display: none;
+    }
+    .Commande{
+        text-align: center;
+        font-family: "Comfortaa", sans-serif;
+        font-size: 6vw;
+    }
+    .Présentation{
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+    }
+    #contentCommandes{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5vh;
+    }
+    #contentCommandes h1{
+        text-align: center;
+        font-size: 6vw;
+    }
+    .Gitprés{
+        display: flex;
+        flex-direction: column;
+        gap: 0.2vh;
+    }
 }
 
 /* Format tablette */
 @media all and (min-width:601px) and (max-width:999px){
-    
+    h1{
+        color: aqua;
+    }
 }
 
 /* Format PC */
 @media all and (min-width:1000px){
-
+    body{
+        display: flex;
+    }
+    .content{
+        padding-left: 2vw;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        align-items: flex-start;
+        width: 15vw;
+        height: 100vh;
+        border-right: 1px solid ;
+        padding-top: 2.5vh;
+    }
+    nav h1{
+        font-size: 3vh;
+        text-align: center;
+        padding-left: 2vw;
+        color: aqua;
+    }
+    a{
+        color: black;
+        font-style: normal;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1vw;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        padding-left: 1vw;
+    }
+    #footer{
+        position: absolute;
+        bottom: 0;
+        left: 1%;
+    }
+    button {
+        font-size: 1em;
+        padding: 10px;
+        color: #fff;
+        border: 2px solid #06D85F;
+        border-radius: 20px/50px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+      }
+      .overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
+      }
+      .overlay:target {
+        visibility: visible;
+        opacity: 1;
+      }
+      
+      .popup {
+        margin: 70px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+        width: 30%;
+        position: relative;
+        transition: all 5s ease-in-out;
+      }
+      
+      .popup h2 {
+        margin-top: 0;
+        color: #333;
+        font-family: Tahoma, Arial, sans-serif;
+      }
+      .popup .close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        transition: all 200ms;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+      }
+      .popup .close:hover {
+        color: #06D85F;
+      }
+      .popup .contentpopup {
+        max-height: 30%;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+      }
 }
