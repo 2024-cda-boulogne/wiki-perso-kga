@@ -6,7 +6,8 @@
     <meta name="description" content="Je suis une description">
     <title>Wiki Perso</title>
     <link rel="stylesheet" href="styles/style.css">
-    
+    <script src="https://kit.fontawesome.com/ef228ddb22.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <nav>
@@ -15,25 +16,36 @@
         <a href="/commandes.html">Commandes git</a>
         <a href="/diagrammes.html">Les Diagrammes</a>
         <a href="/merise.html">La méthode Merise</a>
-        <a class="button" href="#popup1">A propos</a>
+        <a href="#popup1">A propos</a>
         <p id="footer">Ceci est un footer</p>
     </nav>
     <div class="content">
-        <h1 id="IntroAcc">CA C'EST MA PAGE D'ACCUEIL</h1>
+        <h1 id="IntroAcc">Page d'accueil</h1>
         <p id="ParAcc">Bienvenue sur le wiki blablabla</p>
-        <div id="popup1" class="overlay">
-            <div class="popup">
-                <h2>A propos</h2>
-                <a class="close" href="#">&times;</a>
-                <div class="contentpopup">
-                    <a href="https://github.com/Karl-Gavois" target="_blank">Mon Github</a>
-                    <a href="https://www.linkedin.com/in/karl-gavois/">Mon Linkedin</a>
+    </div>
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>A propos</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="contentpopup">
+                <div class="PopupRow">
+                    <i class="fa-solid fa-user fa-lg"></i><p>Gavois Karl</p>
+                </div>
+                <div class="PopupRow">
+                    <i class="fa-solid fa-cake-candles fa-lg"></i><p>19/02/2001</p>
+                </div>
+                <div class="PopupRow">
+                    <i class="fa-solid fa-location-dot fa-lg"></i><p>Boulogne-sur-Mer</p>
+                </div>
+                <div class="PopupRow">
+                    <i class="fa-solid fa-envelope fa-lg"></i><p>Gavois.k@hotmail.com</p></li>
+                </div>
+                <div class="Reseaux">
+                    <a href="https://github.com/Karl-Gavois" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+                    <a href="https://www.linkedin.com/in/karl-gavois/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl" style="color: #000000;"></i></a>
                 </div>
             </div>
         </div>
     </div>
-    <footer>
-        <p>Ceci est un footer</p>
-    </footer>
 </body>
 </html>
