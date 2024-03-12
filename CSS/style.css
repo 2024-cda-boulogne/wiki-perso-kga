@@ -6,7 +6,6 @@ body{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
 }
-
 .dark-mode {
     background-color: black;
     color: white;
@@ -102,7 +101,7 @@ body{
     }
     .ContentIMG{
         width: 70vw;
-        padding-left: 15vw;
+        padding-left: 10vw;
     }
     .Explications{
         font-size: 4.5vw;
