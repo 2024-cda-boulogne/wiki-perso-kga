@@ -59,6 +59,13 @@
         flex-direction: column;
         gap: 0.2vh;
     }
+    .MeriseIMG{
+        width: 70vw;
+    }
+
+
+
+
     /* Popup */
     .overlay {
         position: fixed;
