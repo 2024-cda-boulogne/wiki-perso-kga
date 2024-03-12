@@ -112,12 +112,11 @@
     }
     .PopupRow{
         display: flex;
-        justify-content: center;
         flex-direction: row;
         gap: 2.5vw;
     }
-    .PopupRow i{
-        padding-top: 25px;
+    .PopupRow svg{
+        width: 2vh;
     }
     .Reseaux{
         display: flex;
