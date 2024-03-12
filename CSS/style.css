@@ -49,6 +49,12 @@ body{
         text-align: center;
         margin-left: 0;
     }
+    #btndarkmode{
+        position: absolute;
+        top: 1vh;
+        right: 2vw;
+        width: 10vw;
+    }
     a{
         color: black;
         font-style: normal;
@@ -130,7 +136,7 @@ body{
         opacity: 1;
     }
     .popup {
-        margin: 70px auto;
+        margin: 275px auto;
         padding: 20px;
         background: #fff;
         border-radius: 5px;
