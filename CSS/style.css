@@ -3,6 +3,8 @@
 
 *{
     background-color: rgb(255, 255, 255);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
 }
 
 /* Format mobile */
@@ -59,6 +61,25 @@
         flex-direction: column;
         gap: 0.2vh;
     }
+    .ContentIMG{
+        width: 70vw;
+        padding-left: 15vw;
+    }
+    .Explications{
+        font-size: 4.5vw;
+        text-align: center;
+    }
+    .TitreContent{
+        text-align: center;
+        font-size: 6.5vw;
+        padding-top: 2.5vh;
+        padding-bottom: 1vh;
+        text-decoration: underline;
+    }
+
+
+
+
     /* Popup */
     .overlay {
         position: fixed;
@@ -123,7 +144,10 @@
         justify-content: center;
         flex-direction: row;
         gap: 5vw;
-        padding-top: 3vh;
+        padding-top: 1vh;
+    }
+    .Reseaux svg{
+        width: 5vh;
     }
 }
 
