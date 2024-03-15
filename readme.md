@@ -2,7 +2,7 @@ Checklist Mise en Ligne d'un Site Statique<br>
 
 SEO <br>
 ✅ Présence d'un fichier Robots.txt : Permettre ou resteindre l'accès aux bots. <br>
-✅ Présence d'un fichier Sitemap X✅ML : Faciliter la compréhension de la structure du site par les moteurs de recherche.<br>
+✅ Présence d'un fichier Sitemap XML : Faciliter la compréhension de la structure du site par les moteurs de recherche.<br>
 ✅ Vitesse du Site : Utilisez Google Lighthouse pour identifier les problèmes de performance. <br>
 ✅ Optimisation Mobile : S'assurer en responsive design mode (ou avec https://responsively.app/) <br>
 ❌ Données Structurées : Utilisez Schema.org pour enrichir le contenu de chaque page. <br>
