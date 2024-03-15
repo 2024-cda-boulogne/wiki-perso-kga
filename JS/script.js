@@ -1,10 +1,3 @@
-// var btn = document.querySelector("#btndarkmode");
-
-// btn.addEventListener('click', function(){
-//     document.body.classList.toggle("dark-mode");
-//     }
-// )
-
 let theme_switcher=document.querySelector("#btndarkmode");
 let storageValue=localStorage.getItem("theme_state");
 
