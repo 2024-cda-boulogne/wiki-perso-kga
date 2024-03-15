@@ -22,6 +22,9 @@ nav {
         font-family: $font-main;
         font-weight: 500;
     }
+    #footer {
+        display: none;
+    }
   }
 
 @media all and (min-width: 1000px) {

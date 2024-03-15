@@ -1,1 +1,26 @@
 @use '../utils/variables' as *;
+
+#IntroAcc {
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top: 5vh;
+  }
+  #ParAcc {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 5vh;
+  }
+
+@media all and (min-width: 1000px) {
+    #IntroAcc {
+        text-align: center;
+        font-size: 3rem;
+        padding-top: 5vh;
+      }
+      #ParAcc {
+        text-align: center;
+        font-size: 2rem;
+        padding-top: 5vh;
+      }
+    
+}
