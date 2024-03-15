@@ -1,0 +1,64 @@
+@use '../utils/variables' as *;
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    margin-left: 0;
+
+    span{
+        font-size: 6.5vw;
+        color: red;
+        font-weight: 600;
+        padding-bottom: 3vh;
+    }
+    a{
+        color: black;
+        font-style: normal;
+        text-decoration: none;
+        text-align: center;
+        font-size: 5vw;
+        font-family: $font-main;
+        font-weight: 500;
+    }
+    #footer {
+        display: none;
+    }
+  }
+
+@media all and (min-width: 1000px) {
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        align-items: flex-start;
+        width: 12.5vw !important;
+        min-height: 100vh;
+        border-right: 1px solid;
+        padding-top: 2.5vh;
+
+        span{
+            font-size: 3vh;
+            color: red;
+            text-align: center;
+        }
+        a {
+            color: black;
+            font-style: normal;
+            text-decoration: none;
+            text-align: center;
+            font-size: 1vw;
+            font-family: $font-main;
+            font-weight: 500;
+            padding-left: 1vw;
+          }
+        #footer {
+            position: absolute;
+            bottom: 0;
+            left: 1%;
+          }   
+    }
+    
+}

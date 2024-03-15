@@ -1,43 +1,127 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
-body {
-  background-color: rgb(255, 255, 255);
+.content table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  padding-left: 2vw;
-  padding-right: 2vw;
 }
-.dark-mode {
-  background-color: black;
-  color: white;
-}
-.dark-mode nav {
-  background-color: black;
-}
-.dark-mode nav a {
-  color: white !important;
-  background-color: black;
-}
-.dark-mode nav span {
-  color: yellow;
-  background-color: black;
-}
-.dark-mode div p {
-  color: white !important;
-  background-color: black;
-}
-.dark-mode svg {
-  fill: yellow;
-}
-.dark-mode .popup {
-  background-color: black;
-}
-.dark-mode h2 {
-  color: white !important;
+.content th {
+  margin-bottom: 2vh;
+  padding: 8px 10px;
+  width: 15vw;
 }
 
-/* Format mobile */
+@media all and (min-width: 1000px) {
+  .content table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    gap: 5vh;
+    margin-left: 2vw;
+  }
+  .content th {
+    margin-bottom: 2vh;
+    padding: 8px 10px;
+    width: 15vw;
+  }
+}
+.content .TitreContent {
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+.content .FlexDiagram {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  align-items: center;
+  text-align: center;
+}
+.content .FlexDiagram .SousTitreContent {
+  font-size: 1.5rem;
+  padding-top: 2vh;
+}
+.content .FlexDiagram .IMGDiag {
+  width: 70vw;
+}
+.content .FlexDiagram .TxtDiag {
+  font-size: 1.1rem;
+}
+
+@media all and (min-width: 1000px) {
+  .content {
+    width: 80vw;
+    padding-left: 2vw;
+  }
+  .content .TitreContent {
+    text-align: center;
+    font-size: 2.5rem;
+    text-decoration: underline;
+  }
+  .content .FlexDiagram {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    align-items: center;
+    text-align: center;
+  }
+  .content .FlexDiagram .SousTitreContent {
+    font-size: 1.5rem;
+    padding-top: 2vh;
+  }
+  .content .FlexDiagram .IMGDiag {
+    width: 20vw;
+  }
+  .content .FlexDiagram .TxtDiag {
+    font-size: 1.1rem;
+  }
+}
+.content .FlexMerise {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  align-items: center;
+  text-align: center;
+}
+.content .FlexMerise .SousTitreContent {
+  font-size: 1.5rem;
+  padding-top: 2vh;
+  text-align: center;
+}
+.content .FlexMerise .MeriseIMG {
+  width: 70vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+#IntroAcc {
+  text-align: center;
+  font-size: 2.5rem;
+  padding-top: 5vh;
+}
+
+#ParAcc {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 5vh;
+}
+
+@media all and (min-width: 1000px) {
+  #IntroAcc {
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 5vh;
+  }
+  #ParAcc {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 5vh;
+  }
+}
 nav {
   display: flex;
   flex-direction: column;
@@ -51,13 +135,7 @@ nav span {
   font-weight: 600;
   padding-bottom: 3vh;
 }
-#btndarkmode {
-  position: absolute;
-  top: 1vh;
-  right: 2vw;
-  width: 10vw;
-}
-a {
+nav a {
   color: black;
   font-style: normal;
   text-decoration: none;
@@ -66,59 +144,85 @@ a {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }
-#IntroAcc {
-  text-align: center;
-  font-size: 8vw;
-  padding-top: 5vh;
-}
-#ParAcc {
-  text-align: center;
-  font-size: 5vw;
-  padding-top: 5vh;
-}
-#footer {
+nav #footer {
   display: none;
 }
-.Commande {
-  text-align: center;
-  font-family: "Comfortaa", sans-serif;
-  font-size: 6vw;
+
+@media all and (min-width: 1000px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    align-items: flex-start;
+    width: 12.5vw !important;
+    min-height: 100vh;
+    border-right: 1px solid;
+    padding-top: 2.5vh;
+  }
+  nav span {
+    font-size: 3vh;
+    color: red;
+    text-align: center;
+  }
+  nav a {
+    color: black;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1vw;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    padding-left: 1vw;
+  }
+  nav #footer {
+    position: absolute;
+    bottom: 0;
+    left: 1%;
+  }
 }
-.Présentation {
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
+.dark-mode {
+  background-color: rgb(0, 0, 0);
+  color: white;
 }
-#contentCommandes {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5vh;
+.dark-mode nav {
+  background-color: rgb(0, 0, 0);
 }
-.Gitpres {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2vh;
+.dark-mode nav a {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(0, 0, 0);
 }
-.ContentIMG {
-  width: 70vw;
-  padding-left: 10vw;
+.dark-mode nav span {
+  color: rgb(255, 255, 0);
 }
-.Explications {
-  font-size: 4.5vw;
-  text-align: center;
+.dark-mode div p {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(0, 0, 0);
 }
-.TitreContent{
-  text-align: center;
-  font-size: 7.5vw;
-  text-decoration: underline;
+.dark-mode svg {
+  fill: rgb(255, 255, 0);
 }
-.SousTitreContent {
-  text-align: center;
-  font-size: 6.5vw;
-  padding-top: 2.5vh;
-  padding-bottom: 1vh;
+.dark-mode .popup {
+  background-color: rgb(0, 0, 0);
+}
+.dark-mode h2 {
+  color: rgb(255, 255, 255) !important;
 }
 
-/* Popup */
+#btndarkmode {
+  position: absolute;
+  top: 1vh;
+  right: 2vw;
+  width: 10vw;
+}
+
+@media all and (min-width: 1000px) {
+  #btndarkmode {
+    position: absolute;
+    top: 1vh;
+    right: 1vw;
+    width: 2vw;
+  }
+}
 .overlay {
   position: fixed;
   top: 0;
@@ -130,10 +234,12 @@ a {
   visibility: hidden;
   opacity: 0;
 }
+
 .overlay:target {
   visibility: visible;
   opacity: 1;
 }
+
 .popup {
   margin: 275px auto;
   padding: 20px;
@@ -144,11 +250,13 @@ a {
   position: relative;
   transition: all 2s ease-in-out;
 }
+
 .popup h2 {
   margin-top: 0;
   color: #333;
   font-family: Tahoma, Arial, sans-serif;
 }
+
 .popup .close {
   position: absolute;
   top: 20px;
@@ -159,9 +267,11 @@ a {
   text-decoration: none;
   color: #333;
 }
+
 .popup .close:hover {
   color: #06d85f;
 }
+
 .popup .contentpopup {
   display: flex;
   flex-direction: column;
@@ -169,14 +279,17 @@ a {
   font-weight: 400;
   font-size: 4vw;
 }
+
 .PopupRow {
   display: flex;
   flex-direction: row;
   gap: 2.5vw;
 }
+
 .PopupRow svg {
   width: 2vh;
 }
+
 .Reseaux {
   display: flex;
   justify-content: center;
@@ -184,91 +297,17 @@ a {
   gap: 5vw;
   padding-top: 1vh;
 }
+
 .Reseaux svg {
   width: 5vh;
 }
 
-/* Format tablette */
-@media all and (min-width: 601px) and (max-width: 999px) {
-  h1 {
-    color: aqua;
+@media screen and (max-width: 700px) {
+  .popup {
+    width: 70%;
   }
 }
-
-/* Format PC */
 @media all and (min-width: 1000px) {
-  body {
-    display: flex;
-  }
-  .content {
-    padding-left: 2vw;
-    width: 75vw;
-  }
-  nav {
-    display: flex;
-    flex-direction: column;
-    gap: 2vh;
-    align-items: flex-start;
-    width: 15vw !important;
-    height: 100vh;
-    border-right: 1px solid;
-    padding-top: 2.5vh;
-  }
-  nav span {
-    font-size: 3vh;
-    text-align: center;
-    color: red;
-  }
-  a {
-    color: black;
-    font-style: normal;
-    text-decoration: none;
-    text-align: center;
-    font-size: 1vw;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    padding-left: 1vw;
-  }
-  #footer {
-    position: absolute;
-    bottom: 0;
-    left: 1%;
-  }
-  #btndarkmode {
-    position: absolute;
-    top: 1vh;
-    right: 2vw;
-    width: 3.5vw;
-  }
-  .content h1 {
-    font-size: 2.5vw !important;
-  }
-  .Gitpres {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  .TitreContent {
-    font-size: 2vh !important;
-  }
-  #contentCommandes .SousTitreContent{
-    width: 15vw;
-    padding: 0;
-    text-align: left !important;
-    font-size: 2vh;
-  }
-  .SousTitreContent{
-    font-size: 3vh;
-    padding-top: 2vh;
-  }
-  .Explications {
-    font-size: 2vh;
-  }
-  .ContentIMG{
-    width: 20vw;
-    padding-left: 37%;
-  }
-  /*Popup*/
   .overlay {
     position: fixed;
     top: 0;
@@ -317,13 +356,13 @@ a {
     overflow: none;
     display: flex;
     flex-direction: column;
-    gap: 1vw !important ;
-    font-size: 2vh
+    gap: 1vw !important;
+    font-size: 2vh;
   }
   .PopupRow {
     display: flex;
     flex-direction: row;
-    gap: 1vh !important ;
+    gap: 1vh !important;
   }
   .PopupRow svg {
     width: 2vh;
@@ -332,10 +371,27 @@ a {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    gap: 1vh !important; 
+    gap: 1vh !important;
     padding-top: 1vh;
   }
   .Reseaux svg {
     width: 5vh;
   }
 }
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+@media all and (min-width: 1000px) {
+  body {
+    display: flex;
+    margin-top: 0vh;
+    height: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

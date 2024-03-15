@@ -1,0 +1,26 @@
+
+@use 'pages/commands';
+@use 'pages/diagrammes';
+@use 'pages/merise';
+@use 'pages/home';
+@use 'layouts/nav';
+@use 'layouts/darkmod';
+@use 'layouts/popup';
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }  
+
+@media all and (min-width: 1000px) {
+    body{
+        display: flex;
+        margin-top: 0vh;
+        height: 100%;
+
+    }
+    
+}

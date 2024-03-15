@@ -1,0 +1,38 @@
+@use '../utils/variables' as *;
+
+.content{
+    table{
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+        font-family: $font-main;
+        font-weight: 500;
+    }
+    th{
+        margin-bottom: 2vh;
+        padding: 8px 10px;
+        width: 15vw;
+    }
+}
+
+
+
+@media all and (min-width: 1000px) {
+    
+    .content{
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-family: $font-main;
+            font-weight: 500;
+            gap: 5vh;
+            margin-left: 2vw;
+        }
+        th{
+            margin-bottom: 2vh;
+            padding: 8px 10px;
+            width: 15vw;
+        }
+    }
+}
