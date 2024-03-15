@@ -1,0 +1,40 @@
+@use '../utils/variables' as *;
+
+.dark-mode{
+    background-color: $bg-dark;
+    color: white;
+
+    nav{
+        background-color: $bg-dark;
+
+        a{
+            color: $bg-light !important;
+            background-color: $bg-dark;
+        }
+        span{
+            color: $title-dark;
+        }
+    }
+    div{
+        p{
+            color: $bg-light !important;
+            background-color: $bg-dark;
+        }
+    }
+    svg{
+        fill: $title-dark;
+    }
+    .popup{
+        background-color: $bg-dark;
+    }
+    h2{
+        color: $bg-light !important;
+    }
+    
+}
+#btndarkmode {
+    position: absolute;
+    top: 1vh;
+    right: 2vw;
+    width: 10vw;
+  }
