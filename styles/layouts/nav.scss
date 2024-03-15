@@ -19,7 +19,7 @@ nav {
         text-decoration: none;
         text-align: center;
         font-size: 5vw;
-        font-family: "Montserrat", sans-serif;
+        font-family: $font-main;
         font-weight: 500;
     }
   }
@@ -31,7 +31,7 @@ nav {
         flex-direction: column;
         gap: 2vh;
         align-items: flex-start;
-        width: 15vw !important;
+        width: 12.5vw !important;
         min-height: 100vh;
         border-right: 1px solid;
         padding-top: 2.5vh;
@@ -47,7 +47,7 @@ nav {
             text-decoration: none;
             text-align: center;
             font-size: 1vw;
-            font-family: "Montserrat", sans-serif;
+            font-family: $font-main;
             font-weight: 500;
             padding-left: 1vw;
           }

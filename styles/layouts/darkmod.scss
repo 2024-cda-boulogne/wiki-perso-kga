@@ -37,4 +37,14 @@
     top: 1vh;
     right: 2vw;
     width: 10vw;
-  }
+}
+
+@media all and (min-width: 1000px){
+    
+    #btndarkmode {
+        position: absolute;
+        top: 1vh;
+        right: 1vw;
+        width: 2vw;
+      }
+}
