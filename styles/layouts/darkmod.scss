@@ -3,8 +3,14 @@
 .dark-mode{
     background-color: $bg-dark;
     color: white;
-
     .Navbarmobile{
+        background-color: $bg-dark;
+        .hamburger-lines{
+            .line{
+                background: white;
+            
+        }
+        }
 
         .menu-items{
             background-color: $bg-dark;
@@ -36,20 +42,20 @@
     h2{
         color: $bg-light !important;
     }
-    
 }
+
 #btndarkmode {
-    position: absolute;
+    position: fixed;
     z-index: 1002;
-    top: 1vh;
+    top: 7px;
     right: 2vw;
-    height: 5vh;
+    height: 40px;
 }
 
 @media all and (min-width: 1000px){
     
     #btndarkmode {
-        position: absolute;
+        position: fixed;
         top: 1vh;
         right: 1vw;
         width: 2vw;
