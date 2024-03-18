@@ -50,7 +50,7 @@
   .Navbarmobile-container {
     display: block;
     position: relative;
-    height: 8vh;
+    height: 64px;
     top:10px ;
   }
   .Navbarmobile-container input[type="checkbox"] {
@@ -158,6 +158,7 @@
         border-right: 1px solid;
         padding-top: 2.5vh;
         padding-left: 2vw;
+        height: 100%;
 
         span{
             font-size: 3vh;
