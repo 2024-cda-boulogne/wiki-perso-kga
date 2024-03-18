@@ -7,12 +7,19 @@
 @use 'layouts/darkmod';
 @use 'layouts/popup';
 
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
 body {
     background-color: rgb(255, 255, 255);
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    margin: 0;
+    height: 100%;
   }  
 
 @media all and (min-width: 1000px) {

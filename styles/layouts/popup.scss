@@ -1,7 +1,9 @@
 @use '../utils/variables' as *;
 
 
-
+.popup1{
+  z-index: 102;
+}
 
 .overlay {
     position: fixed;
@@ -27,6 +29,7 @@
     height: 35vh;
     position: relative;
     transition: all 2s ease-in-out;
+    z-index: 101;
   }
   .popup h2 {
     margin-top: 0;
