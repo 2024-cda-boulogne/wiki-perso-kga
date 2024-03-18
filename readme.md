@@ -1,6 +1,5 @@
 Lien site : https://2024-cda-boulogne.github.io/wiki-perso-kga/index.html
 
-
 Checklist Mise en Ligne d'un Site Statique<br>
 
 SEO <br>
@@ -19,19 +18,19 @@ SEO de Contenu <br>
 
 SEO Avancé <br>
 ✅ SEO International : Appliquez l'attribut lang sur certaines balises si elles contiennent quelques lignes de texte écrites dans une langue différente. <br>
-❌ Méta Tags Sociaux : Intégrez Open Graph et Twitter Cards. <br>
+✅ Méta Tags Sociaux : Intégrez Open Graph et Twitter Cards. <br>
 
 Accessibilité <br>
 ✅ Navigation au Clavier : Assurez-vous que le site peut être navigué uniquement au clavier.<br>
 ❌ Aria Landmarks : Utilisez les rôles ARIA pour identifier les zones de la page.<br>
 ✅ Contraste des Couleurs : Assurez un contraste suffisant entre le texte et son arrière-plan (WCAG contrast checker)<br>
-❌ Taille de Police Ajustable : Permettez aux utilisateurs de modifier la taille du texte sans perte de fonctionnalité (utiliser l'unité px, pas rem)<br>
+✅ Taille de Police Ajustable : Permettez aux utilisateurs de modifier la taille du texte sans perte de fonctionnalité (utiliser l'unité px, pas rem)<br>
 ❌ Transcriptions pour Médias : Offrez des alternatives textuelles pour tout contenu audio ou vidéo.<br>
 
 Bonnes Pratiques de Développement pour HTML/CSS/JS<br>
 ✅ Utilisation d'un seul H1 par page : Structurez clairement le contenu principal.<br>
 ✅ lang="fr" sur balise html: Si le contenu de votre page est principalement en français<br>
-❌ Balises Sémantiques : Améliorez l'accessibilité et le référencement.<br>
+✅ Balises Sémantiques : Améliorez l'accessibilité et le référencement.<br>
 ✅ Hiérarchie des Titres : Respectez une structure logique.<br>
 ❌ Compression des Ressources : Réduisez la taille des fichiers CSS, JS, et images.<br>
 
