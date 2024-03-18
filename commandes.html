@@ -12,13 +12,32 @@
   </head>
   <body>
     <nav>
-      <span>Le Wik'Git</span>
-      <a href="/wiki-perso-kga/index.html">Accueil</a>
-      <a href="/wiki-perso-kga/commandes.html">Commandes git</a>
-      <a href="/wiki-perso-kga/diagrammes.html">Les Diagrammes</a>
-      <a href="/wiki-perso-kga/merise.html">La méthode Merise</a>
-      <a href="#popup1">A propos</a>
-      <p id="footer">Ceci est un footer</p>
+      <div class="Navbarmobile">
+        <div class="Navbarmobile-container container">
+          <input type="checkbox" name="Bouton Navbar" id="BoutonNavbar" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <ul class="menu-items">
+            <li><a href="/wiki-perso-kga/index.html">Accueil</a></li>
+            <li><a href="/wiki-perso-kga/commandes.html">Les commandes git</a></li>
+            <li><a href="/wiki-perso-kga/diagrammes.html">Les Diagrammes UML</a></li>
+            <li><a href="/wiki-perso-kga/merise.html">La méthode Merise</a></li>
+            <li><a href="#popup1">A propos</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="NavbarPC">
+        <span>Le Wik'Git</span>
+        <a href="/wiki-perso-kga/index.html">Accueil</a>
+        <a href="/wiki-perso-kga/commandes.html">Commandes git</a>
+        <a href="/wiki-perso-kga/diagrammes.html">Les Diagrammes</a>
+        <a href="/wiki-perso-kga/merise.html">La méthode Merise</a>
+        <a href="#popup1">A propos</a>
+        <p id="footer">Ceci est un footer</p>
+      </div>
     </nav>
     <svg
       id="btndarkmode"
@@ -82,46 +101,6 @@
           <td>Permet d'afficher l'historique des commits</td>
         </tr>
       </table>
-
-
-
-
-
-
-
-      <!-- <div class="Gitpres">
-        <h2 class="SousTitreContent">"Git init"</h2>
-        <p class="Explications">
-          Cette commande sert à initialiser son projet en local en créant un
-          dossier .git afin de la déployer sur Github par la suite
-        </p>
-      </div>
-      <div class="Gitpres">
-        <h2 class="SousTitreContent">"Git add ."</h2>
-        <p class="Explications">
-          Cette commande sert à sélectionner les fichiers voulu pour ensuite les
-          envoyer sur Github avec d'autres commandes
-        </p>
-      </div>
-      <div class="Gitpres">
-        <h2 class="SousTitreContent">"Git commit -m "Oui"</h2>
-        <p class="Explications">
-          Cette commande sert à préparer à l'envoi les fichiers sélectionnés
-          avec la commande "git add ." pour les envoyer par la suite
-        </p>
-      </div>
-      <div class="Gitpres">
-        <h2 class="SousTitreContent">"Git push"</h2>
-        <p class="Explications">
-          Cette commande sert à envoyer les fichiers sur Github
-        </p>
-      </div>
-    <div class="Gitpres">
-        <h2 class="SousTitreContent">"Git pull"</h2>
-        <p class="Explications">
-          Cette commande sert à récuperer un projet hébergé sur Github
-        </p>
-      </div> -->
       <div id="popup1" class="overlay">
         <div class="popup">
           <h2>A propos</h2>
@@ -185,5 +164,8 @@
         </div>
       </div>
     </div>
+    <footer>
+      <p>ça c'est mon footer</p>
+    </footer>
   </body>
 </html>

@@ -8,15 +8,11 @@ if(storageValue===null){
 }
 function darkMode(){
     localStorage.setItem("theme_state","enabled_state")
-    document.body.classList.add("dark-mode")
-    // theme_switcher.setAttribute("src","./sun.png")
-}
+    document.body.classList.add("dark-mode")}
 
 function lightMode(){
     document.body.classList.remove("dark-mode")
-    localStorage.setItem("theme_state","disabled_state")
-    // theme_switcher.setAttribute("src","./moon.png")
-}
+    localStorage.setItem("theme_state","disabled_state")}
 
 theme_switcher.addEventListener("click",()=>{
     storageValue=localStorage.getItem("theme_state")
