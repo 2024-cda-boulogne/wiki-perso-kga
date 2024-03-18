@@ -7,6 +7,7 @@
         text-align: center;
         font-size: 1.5rem;
         text-decoration: underline;
+        padding-bottom: 2.5vh;
     }
     .FlexDiagram{
         display: flex;
@@ -17,14 +18,18 @@
 
         .SousTitreContent{
             font-size: 1.5rem;
-            padding-top: 2vh;
+            padding-bottom: 2.5vh;
             
         }
         .IMGDiag{
             width: 70vw;
+            padding-bottom: 2.5vh;
         }
         .TxtDiag{
             font-size: 1.1rem;
+        }
+        .Explications{
+            padding-left: 2vw;
         }
     }
 }

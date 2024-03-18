@@ -149,12 +149,14 @@
       display: none;
     }
     .NavbarPC {
+      position: fixed;
         display: flex;
         flex-direction: column;
         gap: 2vh;
         align-items: flex-start;
         width: 12.5vw !important;
-        min-height: 100vh;
+        // min-height: 100vh;
+        height: 100%;
         border-right: 1px solid;
         padding-top: 2.5vh;
         padding-left: 2vw;
@@ -174,12 +176,7 @@
             font-family: $font-main;
             font-weight: 500;
             padding-left: 1vw;
-          }
-        #footer {
-            position: absolute;
-            bottom: 0;
-            left: 1%;
-          }   
+          } 
     }
     
 }

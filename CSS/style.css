@@ -14,6 +14,10 @@
 }
 
 @media all and (min-width: 1000px) {
+  .content {
+    padding-left: 20vw;
+    margin-left: 15vw;
+  }
   .content table {
     width: 100%;
     border-collapse: collapse;
@@ -36,6 +40,7 @@
   text-align: center;
   font-size: 1.5rem;
   text-decoration: underline;
+  padding-bottom: 2.5vh;
 }
 .content .FlexDiagram {
   display: flex;
@@ -46,13 +51,17 @@
 }
 .content .FlexDiagram .SousTitreContent {
   font-size: 1.5rem;
-  padding-top: 2vh;
+  padding-bottom: 2.5vh;
 }
 .content .FlexDiagram .IMGDiag {
   width: 70vw;
+  padding-bottom: 2.5vh;
 }
 .content .FlexDiagram .TxtDiag {
   font-size: 1.1rem;
+}
+.content .FlexDiagram .Explications {
+  padding-left: 2vw;
 }
 
 @media all and (min-width: 1000px) {
@@ -93,6 +102,7 @@
 .content .FlexMerise .SousTitreContent {
   font-size: 1.5rem;
   padding-top: 2vh;
+  padding-bottom: 2.5vh;
   text-align: center;
 }
 .content .FlexMerise .MeriseIMG {
@@ -259,12 +269,13 @@
     display: none;
   }
   .NavbarPC {
+    position: fixed;
     display: flex;
     flex-direction: column;
     gap: 2vh;
     align-items: flex-start;
     width: 12.5vw !important;
-    min-height: 100vh;
+    height: 100%;
     border-right: 1px solid;
     padding-top: 2.5vh;
     padding-left: 2vw;
@@ -284,11 +295,6 @@
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     padding-left: 1vw;
-  }
-  .NavbarPC #footer {
-    position: absolute;
-    bottom: 0;
-    left: 1%;
   }
 }
 .dark-mode {
@@ -371,6 +377,8 @@
   background: #fff;
   border-radius: 5px;
   width: 70%;
+  position: absolute;
+  z-index: 1505;
   height: 35vh;
   position: relative;
   transition: all 2s ease-in-out;
@@ -404,12 +412,14 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 4vw;
+  margin-top: 3vh;
 }
 
 .PopupRow {
   display: flex;
   flex-direction: row;
   gap: 2.5vw;
+  padding-bottom: 2vh;
 }
 
 .PopupRow svg {
@@ -455,9 +465,10 @@
     background: #fff;
     border-radius: 5px;
     width: 30%;
-    height: 45vh;
+    height: 38vh;
     position: relative;
     transition: all 2s ease-in-out;
+    z-index: 1005;
   }
   .popup h2 {
     margin-top: 0;
@@ -484,11 +495,13 @@
     flex-direction: column;
     gap: 1vw !important;
     font-size: 2vh;
+    margin-top: 3vh;
   }
   .PopupRow {
     display: flex;
     flex-direction: row;
     gap: 1vh !important;
+    padding-bottom: 2vh;
   }
   .PopupRow svg {
     width: 2vh;
@@ -519,7 +532,8 @@ body {
 
 footer {
   position: absolute;
-  bottom: 0;
+  bottom: 1vh;
+  left: 1vw;
 }
 
 @media all and (min-width: 1000px) {
@@ -527,6 +541,11 @@ footer {
     display: flex;
     margin-top: 0vh;
     height: 100%;
+  }
+  footer {
+    position: fixed;
+    bottom: 1vh;
+    left: 1vw;
   }
 }
 
